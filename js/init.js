@@ -12,6 +12,7 @@ Import('firebase-firestore');
 Import('cl.quickcorp');
 
 Ready(function (){
-  GLOBAL.loadFirebase  = function (){if (!GLOBAL.firebaseLoaded){var kfb=(![]+[])[(+[])]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+(!![]+[])[(+!+[])]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(typeof [])[(+!+[])]+(![]+[])[(+!+[])]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+(typeof [])[((+!+[])+(+!+[]))*((+!+[])+(+!+[]))]+(![]+[])[((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+[+!+[]+[+[]]])/((+!+[])+(+!+[]))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[])]+(!![]+[])[(+[])];var config = CONFIG.get(kfb);firebase.initializeApp(config);settings = {timestampsInSnapshots: true};firebase.firestore().settings(settings);GLOBAL.firebaseLoaded=true;}}
+  GLOBAL.loadFirebase  = function (){if (!GLOBAL.firebaseLoaded){
+    var f=window[(![]+[])[(+!+[])]+(!![]+[])[(+[])]+(typeof ![])[(+!+[])]+(typeof [])[(+!+[])]];var f2=(RegExp().constructor.name)[((+!+[])+(+!+[]))+(+!+[]+((+!+[])+(+!+[])))]+(![]+[])[(+!+[])]+(!![]+[])[(+!+[])]+(![]+[])[(+!+[]+((+!+[])+(+!+[])))]+([]+[]+[][[]])[(+!+[]+((+!+[])+(+!+[])))];var kfb='q'+(![]+[])[(+[])]+(typeof [])[(+!+[])];var config = JSON[f2](f(CONFIG.get(kfb)));firebase.initializeApp(config);var settings = {timestampsInSnapshots: true};firebase.firestore().settings(settings);GLOBAL.firebaseLoaded=true;}}
 });
 var CONTACTVIEW;
