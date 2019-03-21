@@ -34,7 +34,7 @@ body {
   -webkit-user-select: none;
   /* prevent copy paste, to allow, change 'none' to 'text' */
   background-color: #FFFFFF;
-  background: filter(url('../img/carbon_mobile5_1568x900.jpg'),blur(8px));
+/*  background: filter(url('../img/carbon_mobile5_1568x900.jpg'),blur(8px));*/
   background-size:cover;background-repeat:no-repeat;resize:both;background-position-x:left;background-position-y: center;}
   background-alpha: 0.2;
   background-size: cover;
