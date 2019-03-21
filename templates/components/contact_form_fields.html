@@ -1,0 +1,50 @@
+<form class="col s12">
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="companyname" type="text" class="validate" data-field="companyname">
+      <label for="companyname">Company Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="file-field input-field">
+    <div class="file-path-wrapper">
+      <img src="https://placehold.it/300x300" class="circle" width="300px" height="300px" id="logoPreview" />
+    </div>
+    <div class="btn">
+      <span>Logo</span>
+      <input type="file" id="logoFile" onchange="GLOBAL.previewLogoChanged()">
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input data-field="first_name" id="first_name" type="text" class="validate">
+      <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="last_name"  data-field="last_name" type="text" class="validate">
+      <label for="last_name">Last Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="email"  data-field="email" type="email" class="validate">
+      <label for="email">Email</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="website"  data-field="website" type="url" class="validate">
+      <label for="website">Website</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input id="phone"  data-field="phone" type="email" class="validate">
+      <label for="phone">Phone</label>
+    </div>
+  </div>
+  <div class="row">
+    <a onclick="GLOBAL.subscribeSponsor()" class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>sign up as a sponsor</a>
+  </div>
+</form>
