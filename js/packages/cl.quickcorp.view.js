@@ -54,6 +54,16 @@ Package('cl.quickcorp.view',[
 						view.sponsors.push(doc.data());
 					})});
 		},
+		watchSponsorsListChanges:function (){
+			var view=this;
+			var db = firebase.firestore();
+			db.collection("companies").onSnapshot(function(querySnapshot) {
+			        view.sponsors = New(ArrayCollection);
+			        querySnapshot.forEach(function(doc) {
+			            sponsors.push(doc.data());
+			        });
+			    });
+		},
 		subscribeSponsor: function (){
 			Tag('component[name=progressbar]')[0].style.display='block';
 			Tag('component[name=contact_form_fields]')[0].style.display='none';
