@@ -16,7 +16,9 @@ var changeLang = function (lang2){
   if (lang1!=lang2){
     Tag('p,a,b,h1,h2,h3,input,component').map(function (element){
       CONFIG.get('messages').map(function (message){
-        element.innerHTML = element.innerHTML.replace(message[lang1],message[lang2]);
+        if (message.hasOwnProperty(lang1) && message.hasOwnProperty(lang2)){
+          element.innerHTML = element.innerHTML.replace(message[lang1],message[lang2]);
+        }
       });
       GLOBAL.set('lang',lang2);
       return element;
