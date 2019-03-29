@@ -1,5 +1,8 @@
 "use strict";
 Package('cl.quickcorp.components',[
+  Class('MainComponent',Component,{
+    cached:false
+  }),
   Class('FormField',Component,{
     cached:false,
     reload:true,
