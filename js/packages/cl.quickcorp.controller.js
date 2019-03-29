@@ -1,9 +1,13 @@
 "use strict";
 Package('cl.quickcorp.controller',[
 	Class('MainController',Object,{
-		_new_:function (){
-			//TODO: Implement
+		component:null,
+		_new_:function (o){
 			logger.debug('MainController Element Initialized');
+			this.component = o.component;
+		},
+		done: function (){
+
 		}
 	}),
 	Class('SideNavController',Object,{
