@@ -60,7 +60,7 @@ Package('cl.quickcorp.view',[
 			db.collection("companies").onSnapshot(function(querySnapshot) {
 			        view.sponsors = New(ArrayCollection);
 			        querySnapshot.forEach(function(doc) {
-			            sponsors.push(doc.data());
+			            view.sponsors.push(doc.data());
 			        });
 			    });
 		},
