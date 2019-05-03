@@ -75,7 +75,7 @@ Package('cl.quickcorp.view',[
 			data.lastLogoUploaded = GLOBAL.contactFormViewInstance.lastLogoUploaded;
 			logger.debug(component);
 
-			GLOBAL.loadFirebase();
+			GLOBAL.connect();
 
 			var newSponsorRef = firebase.firestore().collection("companies").doc();
 			newSponsorRef.set(data).then(function (){
