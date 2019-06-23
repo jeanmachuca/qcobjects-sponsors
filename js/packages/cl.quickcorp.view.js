@@ -70,7 +70,8 @@ Package('cl.quickcorp.view',[
 			Tag('component[name=thankyou]')[0].style.display='none';
 			logger.debug('SUBSCRIBING THE SPONSOR');
 			var component = GLOBAL.contactFormViewInstance.component;
-			component.executeBindings(); //recovers component form data
+			FormField.executeBindings.call(component);//recovers component form data
+
 			var data = component.data;
 			data.lastLogoUploaded = GLOBAL.contactFormViewInstance.lastLogoUploaded;
 			logger.debug(component);
