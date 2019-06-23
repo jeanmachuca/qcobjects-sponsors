@@ -10,6 +10,7 @@ Import('firebase-app');
 Import('firebase-firestore');
 
 Import('cl.quickcorp');
+Component.cached = false;
 
 var changeLang = function (lang2){
   var lang1=(GLOBAL.get('lang'))?(GLOBAL.get('lang')):('en');
